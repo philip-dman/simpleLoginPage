@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/returnBtn1"
+        android:layout_width="244dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="584dp"
+        android:backgroundTint="@color/material_dynamic_neutral60"
+        android:text="Return"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="180dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shicon" />
+
+    <TextView
+        android:id="@+id/textTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="30dp"
+        android:text="ABOUT US"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/body1"
+        android:layout_width="413dp"
+        android:layout_height="228dp"
+        android:layout_marginTop="248dp"
+        android:background="#00695C"
+        android:padding="?attr/shapeCornerSizeSmall"
+        android:paddingLeft="?attr/shapeCornerSizeLarge"
+        android:paddingRight="?attr/shapeCornerSizeLarge"
+        android:text="Safehub is an innovative online counseling booking platform designed to support the Social Welfare Service at La Consolacion University Philippines. By leveraging advanced AI integration, Safehub streamlines the process of scheduling counseling sessions, providing students and community members with an accessible and secure way to connect with professional counselors. Our mission is to promote well-being and mental health through technology-driven, compassionate support tailored to the needs of our university and surrounding communities."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

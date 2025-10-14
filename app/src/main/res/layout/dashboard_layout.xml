@@ -3,7 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral10">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar2"
+        android:layout_width="354dp"
+        android:layout_height="364dp"
+        android:background="@drawable/rounded_corners"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.604" />
 
     <TextView
         android:id="@+id/textTitle"
@@ -14,6 +29,7 @@
         android:layout_marginEnd="30dp"
         android:text="Welcome to Dashboard"
         android:textAlignment="center"
+        android:textColor="#00897B"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,78 +48,86 @@
         app:srcCompat="@drawable/shicon" />
 
     <Button
-        android:id="@+id/aboutUsBtn"
-        android:layout_width="244dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="268dp"
-        android:backgroundTint="#00897B"
-        android:text="About Us"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/contactsBtn"
-        android:layout_width="244dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="508dp"
-        android:backgroundTint="#00897B"
-        android:text="Contacts"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/logoutBtn"
-        android:layout_width="244dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="584dp"
-        android:backgroundTint="@color/material_dynamic_neutral60"
-        android:text="Logout"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
         android:id="@+id/servicesBtn"
-        android:layout_width="244dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="348dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:backgroundTint="#00897B"
         android:text="Services"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintHorizontal_bias="0.816"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.418" />
+
+    <Button
+        android:id="@+id/aboutUsBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:backgroundTint="#00897B"
+        android:text="About Us"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.419" />
+
+    <Button
+        android:id="@+id/contactsBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#00897B"
+        android:text="Contacts"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/servicesBtn" />
 
     <Button
         android:id="@+id/staffBtn"
-        android:layout_width="244dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="428dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="12dp"
         android:backgroundTint="#00897B"
         android:text="Staff"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:cornerRadius="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintHorizontal_bias="0.168"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/aboutUsBtn" />
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="244dp"
+        android:layout_height="62dp"
+        android:backgroundTint="@color/material_dynamic_neutral95"
+        android:text="Logout"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.902" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

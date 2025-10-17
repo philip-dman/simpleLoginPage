@@ -2,65 +2,70 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <TextView
-        android:id="@+id/body2"
-        android:layout_width="412dp"
-        android:layout_height="211dp"
-        android:layout_marginTop="272dp"
-        android:background="#00695C"
-        android:padding="?attr/shapeCornerSizeSmall"
-        android:paddingLeft="?attr/shapeCornerSizeLarge"
-        android:paddingRight="?attr/shapeCornerSizeLarge"
-        android:text="Our dedicated team at Safehub consists of licensed professional counselors, experienced social workers, and technical experts who maintain the platform's functionality and security. The counseling staff is trained to address various mental health and social issues relevant to university students and community members. Alongside human expertise, the AI system assists by analyzing user needs and optimizing counselor matching, allowing our staff to offer more focused and effective support."
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        android:typeface="sans"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral10"
+    android:padding="16dp">
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="180dp"
         android:layout_height="159dp"
-        android:layout_marginTop="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/shicon"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/shicon" />
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textTitle5"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="156dp"
-        android:layout_marginEnd="30dp"
         android:text="STAFF"
         android:textAlignment="center"
+        android:textColor="#00897B"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView6"
+        android:layout_marginTop="12dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
+    <TextView
+        android:id="@+id/body2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_body_bg"
+        android:padding="16dp"
+        android:text="Our dedicated team at Safehub consists of licensed professional counselors, experienced social workers, and technical experts who maintain the platform's functionality and security. The counseling staff is trained to address various mental health and social issues relevant to university students and community members. Alongside human expertise, the AI system assists by analyzing user needs and optimizing counselor matching, allowing our staff to offer more focused and effective support."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:typeface="sans"
+        app:layout_constraintTop_toBottomOf="@id/textTitle5"
+        app:layout_constraintBottom_toTopOf="@id/returnBtn3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp" />
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/returnBtn3"
-        android:layout_width="244dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="584dp"
-        android:backgroundTint="@color/material_dynamic_neutral60"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
         android:text="Return"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
+        android:textColor="@color/black"
+        app:cornerRadius="12dp"
+        android:backgroundTint="@color/material_dynamic_neutral60"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
